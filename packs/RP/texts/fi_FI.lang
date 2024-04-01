@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Tämän lisäosan avulla voit nähdä muiden pelaajien varaston ja muokata niitä. Luonut r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Napauta §lVarasto-painiketta§r avataksesi luettelon
+action.hint.exit.console.r4isen1920_invsee:inventory=Paina §l:_input_key.inventory:§r avataksesi luettelon
+entity.r4isen1920_invsee:inventory.name=[Inventory Viewer]
+item.r4isen1920_invsee:inventory.name=Varaston katseluohjelma
+gui.invsee.containerTitle=§r:n luettelo
+gui.invsee.title=Varaston katseluohjelma
+gui.invsee.body=Valitse pelaaja nähdäksesi hänen varastonsa
+gui.invsee.search=Etsi pelaaja nimellä
+gui.invsee.textField=Pelaaja nimi
+gui.invsee.notFound=Nimeä vastaavaa pelaajaa ei löytynyt: '%s'
+gui.invsee.matchFound.singular=Löytyi seuraava pelaaja:
+gui.invsee.matchFound.plural=Löytyi seuraavat pelaajat:
+gui.invsee.searchAgain=Etsi uudestaan
+gui.invsee.ownInventory=Et voi tarkastella omaa inventaariota tällä tavalla. Valitse toinen pelaaja.
+gui.invsee.back=Mene takaisin

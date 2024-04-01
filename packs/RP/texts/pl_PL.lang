@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Ten dodatek umożliwia przeglądanie ekwipunku innych graczy i modyfikowanie ich. Stworzony przez r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Naciśnij przycisk §lInwentarz§r, aby otworzyć ekwipunek
+action.hint.exit.console.r4isen1920_invsee:inventory=Naciśnij klawisz §l:_input_key.inventory:§r, aby otworzyć swój ekwipunek
+entity.r4isen1920_invsee:inventory.name=[Przeglądający ekwipunek]
+item.r4isen1920_invsee:inventory.name=Przeglądarka zapasów
+gui.invsee.containerTitle=Inwentarz §r
+gui.invsee.title=Przeglądarka zapasów
+gui.invsee.body=Wybierz gracza, aby wyświetlić jego ekwipunek
+gui.invsee.search=Wyszukaj gracza według nazwy
+gui.invsee.textField=Nazwa gracza
+gui.invsee.notFound=Nie znaleziono gracza pasującego do nazwy: '%s'
+gui.invsee.matchFound.singular=Znaleziono następującego gracza:
+gui.invsee.matchFound.plural=Znaleziono następujących graczy:
+gui.invsee.searchAgain=Poszukaj ponownie
+gui.invsee.ownInventory=W ten sposób nie można przeglądać własnego asortymentu. Wybierz innego gracza.
+gui.invsee.back=Wróć

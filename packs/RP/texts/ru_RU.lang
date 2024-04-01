@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Это дополнение позволяет вам видеть инвентарь другого игрока и изменять его. Создано r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Нажмите кнопку §lИнвентарь§r, чтобы открыть инвентарь.
+action.hint.exit.console.r4isen1920_invsee:inventory=Нажмите §l:_input_key.inventory:§r, чтобы открыть инвентарь.
+entity.r4isen1920_invsee:inventory.name=[Просмотр инвентаря]
+item.r4isen1920_invsee:inventory.name=Средство просмотра инвентаря
+gui.invsee.containerTitle=Инвентаризация §r
+gui.invsee.title=Средство просмотра инвентаря
+gui.invsee.body=Выберите игрока, чтобы просмотреть его инвентарь
+gui.invsee.search=Поиск игрока по имени
+gui.invsee.textField=Имя игрока
+gui.invsee.notFound=Не найден ни один игрок, соответствующий имени: '%s'
+gui.invsee.matchFound.singular=Нашёл следующего плеера:
+gui.invsee.matchFound.plural=Нашёл следующих игроков:
+gui.invsee.searchAgain=Искать снова
+gui.invsee.ownInventory=Вы не можете просмотреть свой собственный инвентарь таким образом. Пожалуйста, выберите другого игрока.
+gui.invsee.back=Возвращаться

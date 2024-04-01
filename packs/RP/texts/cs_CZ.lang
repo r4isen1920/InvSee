@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Tento doplněk vám umožňuje vidět inventář ostatních hráčů a upravovat je. Vytvořil r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Klepnutím na tlačítko §lInventář§r otevřete jejich inventář
+action.hint.exit.console.r4isen1920_invsee:inventory=Stisknutím §l:_input_key.inventory:§r otevřete jejich inventář
+entity.r4isen1920_invsee:inventory.name=[Prohlížeč inventáře]
+item.r4isen1920_invsee:inventory.name=Prohlížeč inventáře
+gui.invsee.containerTitle=Inventář §r
+gui.invsee.title=Prohlížeč inventáře
+gui.invsee.body=Vyberte hráče pro zobrazení jeho inventáře
+gui.invsee.search=Vyhledejte hráče podle jména
+gui.invsee.textField=Jméno hráče
+gui.invsee.notFound=Nebyl nalezen žádný hráč odpovídající názvu: '%s'
+gui.invsee.matchFound.singular=Nalezen následující hráč:
+gui.invsee.matchFound.plural=Našli následující hráče:
+gui.invsee.searchAgain=Hledej znovu
+gui.invsee.ownInventory=Tímto způsobem nemůžete prohlížet svůj vlastní inventář. Vyberte prosím jiného hráče.
+gui.invsee.back=Vraťte se zpět

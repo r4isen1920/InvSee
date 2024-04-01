@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Bu Eklenti diğer oyuncuların envanterini görmenize ve değiştirmenize olanak tanır. r4isen1920 tarafından düzenlendi.
+action.hint.exit.r4isen1920_invsee:inventory=Envanterlerini açmak için §lEnvanter butonuna§r dokunun
+action.hint.exit.console.r4isen1920_invsee:inventory=Envanterlerini açmak için §l:_input_key.inventory:§r tuşuna basın
+entity.r4isen1920_invsee:inventory.name=[Envanter Görüntüleyici]
+item.r4isen1920_invsee:inventory.name=Envanter Görüntüleyici
+gui.invsee.containerTitle=§r envanteri
+gui.invsee.title=Envanter Görüntüleyici
+gui.invsee.body=Envanterini görüntülemek için bir oyuncu seçin
+gui.invsee.search=Oyuncuyu İsme Göre Ara
+gui.invsee.textField=Oyuncu ismi
+gui.invsee.notFound=Şu isimle eşleşen oyuncu bulunamadı: '%s'
+gui.invsee.matchFound.singular=Aşağıdaki oyuncuyu buldum:
+gui.invsee.matchFound.plural=Aşağıdaki oyuncuları buldum:
+gui.invsee.searchAgain=Tekrar aramak
+gui.invsee.ownInventory=Bu şekilde kendi envanterinizi görüntüleyemezsiniz. Lütfen başka bir oyuncu seçin.
+gui.invsee.back=Geri gitmek

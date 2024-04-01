@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvΔείτε [BP]
+pack.description=Αυτό το πρόσθετο σάς επιτρέπει να βλέπετε το απόθεμα άλλων παικτών και να το τροποποιείτε. Δημιουργήθηκε από r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Πατήστε το κουμπί §lΑπόθεμα§r για να ανοίξετε το Απόθεμά τους
+action.hint.exit.console.r4isen1920_invsee:inventory=Πατήστε §l:_input_key.inventory:§r για να ανοίξετε το Inventory τους
+entity.r4isen1920_invsee:inventory.name=[Προβολή αποθέματος]
+item.r4isen1920_invsee:inventory.name=Πρόγραμμα προβολής αποθέματος
+gui.invsee.containerTitle=Απογραφή §ρ
+gui.invsee.title=Πρόγραμμα προβολής αποθέματος
+gui.invsee.body=Επιλέξτε έναν παίκτη για να δείτε το απόθεμά του
+gui.invsee.search=Αναζήτηση παίκτη με όνομα
+gui.invsee.textField=Ονομα παίκτη
+gui.invsee.notFound=Δεν βρέθηκε παίκτης που να ταιριάζει με το όνομα: '%s'
+gui.invsee.matchFound.singular=Βρήκε τον παρακάτω παίκτη:
+gui.invsee.matchFound.plural=Βρήκαν τους παρακάτω παίκτες:
+gui.invsee.searchAgain=Αναζήτηση ξανά
+gui.invsee.ownInventory=Δεν μπορείτε να δείτε το δικό σας απόθεμα με αυτόν τον τρόπο. Επιλέξτε άλλον παίκτη.
+gui.invsee.back=Πήγαινε πίσω

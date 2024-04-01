@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Mit diesem Add-On können Sie das Inventar anderer Spieler sehen und ändern. Erstellt von r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Tippen Sie auf die §lInventar-Schaltfläche§r, um ihr Inventar zu öffnen
+action.hint.exit.console.r4isen1920_invsee:inventory=Drücken Sie §l:_input_key.inventory:§r, um ihr Inventar zu öffnen
+entity.r4isen1920_invsee:inventory.name=[Inventarbetrachter]
+item.r4isen1920_invsee:inventory.name=Inventarbetrachter
+gui.invsee.containerTitle=Inventar von §r
+gui.invsee.title=Inventarbetrachter
+gui.invsee.body=Wählen Sie einen Spieler aus, um dessen Inventar anzuzeigen
+gui.invsee.search=Suchen Sie nach Spielernamen
+gui.invsee.textField=Spielername
+gui.invsee.notFound=Kein Spieler gefunden, der mit dem Namen „%s“ übereinstimmt.
+gui.invsee.matchFound.singular=Folgende Spieler gefunden:
+gui.invsee.matchFound.plural=Folgende Spieler gefunden:
+gui.invsee.searchAgain=Erneut suchen
+gui.invsee.ownInventory=Sie können Ihren eigenen Bestand auf diese Weise nicht anzeigen. Bitte wählen Sie einen anderen Spieler aus.
+gui.invsee.back=Geh zurück

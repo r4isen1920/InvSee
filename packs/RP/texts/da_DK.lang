@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Denne tilføjelse giver dig mulighed for at se andre spilleres beholdning og ændre dem. Skabt af r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Tryk på §lInventar-knappen§r for at åbne deres Inventory
+action.hint.exit.console.r4isen1920_invsee:inventory=Tryk på §l:_input_key.inventory:§r for at åbne deres Inventory
+entity.r4isen1920_invsee:inventory.name=[Inventory Viewer]
+item.r4isen1920_invsee:inventory.name=Inventory Viewer
+gui.invsee.containerTitle=Fortegnelse over §r
+gui.invsee.title=Inventory Viewer
+gui.invsee.body=Vælg en spiller for at se deres inventar
+gui.invsee.search=Søg efter spiller efter navn
+gui.invsee.textField=Spiller navn
+gui.invsee.notFound=Ingen spiller fundet matchende navnet: '%s'
+gui.invsee.matchFound.singular=Fandt følgende spiller:
+gui.invsee.matchFound.plural=Fandt følgende spillere:
+gui.invsee.searchAgain=Søg igen
+gui.invsee.ownInventory=Du kan ikke se din egen beholdning på denne måde. Vælg venligst en anden spiller.
+gui.invsee.back=Gå tilbage

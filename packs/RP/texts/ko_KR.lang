@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=이 추가 기능을 사용하면 다른 플레이어의 인벤토리를 보고 수정할 수 있습니다. r4isen1920에 의해 작성되었습니다.
+action.hint.exit.r4isen1920_invsee:inventory=§l인벤토리 버튼§r을 눌러 인벤토리를 엽니다.
+action.hint.exit.console.r4isen1920_invsee:inventory=인벤토리를 열려면 §l:_input_key.inventory:§r을 누르세요.
+entity.r4isen1920_invsee:inventory.name=[인벤토리 뷰어]
+item.r4isen1920_invsee:inventory.name=인벤토리 뷰어
+gui.invsee.containerTitle=§r의 인벤토리
+gui.invsee.title=인벤토리 뷰어
+gui.invsee.body=인벤토리를 보려면 플레이어를 선택하세요.
+gui.invsee.search=이름으로 플레이어 검색
+gui.invsee.textField=선수 이름
+gui.invsee.notFound=이름과 일치하는 플레이어를 찾을 수 없습니다: '%s'
+gui.invsee.matchFound.singular=다음 플레이어를 찾았습니다:
+gui.invsee.matchFound.plural=다음 플레이어를 찾았습니다:
+gui.invsee.searchAgain=다시 검색
+gui.invsee.ownInventory=이 방법으로는 자신의 인벤토리를 볼 수 없습니다. 다른 플레이어를 선택해 주세요.
+gui.invsee.back=돌아가기

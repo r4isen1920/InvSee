@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Met deze add-on kun je de inventaris van andere spelers bekijken en aanpassen. Gemaakt door r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Tik op de §lInventarisknop§r om hun inventaris te openen
+action.hint.exit.console.r4isen1920_invsee:inventory=Druk op §l:_input_key.inventory:§r om hun inventaris te openen
+entity.r4isen1920_invsee:inventory.name=[Voorraadviewer]
+item.r4isen1920_invsee:inventory.name=Voorraadviewer
+gui.invsee.containerTitle=Inventaris van §r
+gui.invsee.title=Voorraadviewer
+gui.invsee.body=Selecteer een speler om zijn inventaris te bekijken
+gui.invsee.search=Zoek naar speler op naam
+gui.invsee.textField=Naam speler
+gui.invsee.notFound=Geen speler gevonden die overeenkomt met de naam: '%s'
+gui.invsee.matchFound.singular=Ik heb de volgende speler gevonden:
+gui.invsee.matchFound.plural=Ik heb de volgende spelers gevonden:
+gui.invsee.searchAgain=Opnieuw zoeken
+gui.invsee.ownInventory=Je kunt je eigen voorraad op deze manier niet bekijken. Selecteer een andere speler.
+gui.invsee.back=Ga terug

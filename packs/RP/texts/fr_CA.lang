@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Ce module complémentaire vous permet de voir l'inventaire des autres joueurs et de les modifier. Créé par r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Appuyez sur le bouton §lInventaire§r pour ouvrir leur inventaire
+action.hint.exit.console.r4isen1920_invsee:inventory=Appuyez sur §l:_input_key.inventory:§r pour ouvrir leur inventaire
+entity.r4isen1920_invsee:inventory.name=[Visionneuse d'inventaire]
+item.r4isen1920_invsee:inventory.name=Visionneuse d'inventaire
+gui.invsee.containerTitle=Inventaire du §r
+gui.invsee.title=Visionneuse d'inventaire
+gui.invsee.body=Sélectionnez un joueur pour voir son inventaire
+gui.invsee.search=Rechercher un joueur par nom
+gui.invsee.textField=Nom de joueur
+gui.invsee.notFound=Aucun joueur trouvé correspondant au nom : '%s'
+gui.invsee.matchFound.singular=J'ai trouvé le joueur suivant :
+gui.invsee.matchFound.plural=J'ai trouvé les joueurs suivants :
+gui.invsee.searchAgain=Chercher à nouveau
+gui.invsee.ownInventory=Vous ne pouvez pas visualiser votre propre inventaire de cette façon. Veuillez sélectionner un autre joueur.
+gui.invsee.back=Retourner

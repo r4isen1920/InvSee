@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvVer [BP]
+pack.description=Este complemento permite que você veja o inventário de outros jogadores e modifique-os. Criado por r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Toque no §lbotão Inventário§r para abrir o inventário
+action.hint.exit.console.r4isen1920_invsee:inventory=Pressione §l:_input_key.inventory:§r para abrir seu inventário
+entity.r4isen1920_invsee:inventory.name=[Visualizador de inventário]
+item.r4isen1920_invsee:inventory.name=Visualizador de inventário
+gui.invsee.containerTitle=Inventário de §r
+gui.invsee.title=Visualizador de inventário
+gui.invsee.body=Selecione um jogador para ver seu inventário
+gui.invsee.search=Pesquisar jogador por nome
+gui.invsee.textField=Nome do jogador
+gui.invsee.notFound=Nenhum jogador encontrado com o nome: '%s'
+gui.invsee.matchFound.singular=Encontrei o seguinte jogador:
+gui.invsee.matchFound.plural=Encontrou os seguintes jogadores:
+gui.invsee.searchAgain=Procure denovo
+gui.invsee.ownInventory=Você não pode visualizar seu próprio inventário dessa maneira. Selecione outro jogador.
+gui.invsee.back=Volte

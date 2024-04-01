@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Questo componente aggiuntivo ti consente di vedere l'inventario di altri giocatori e modificarlo. Creato da r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Tocca il §lpulsante Inventario§r per aprire il loro Inventario
+action.hint.exit.console.r4isen1920_invsee:inventory=Premi §l:_input_key.inventory:§r per aprire il loro inventario
+entity.r4isen1920_invsee:inventory.name=[Visualizzatore inventario]
+item.r4isen1920_invsee:inventory.name=Visualizzatore dell'inventario
+gui.invsee.containerTitle=Inventario del §r
+gui.invsee.title=Visualizzatore dell'inventario
+gui.invsee.body=Seleziona un giocatore per visualizzare il suo inventario
+gui.invsee.search=Cerca giocatore per nome
+gui.invsee.textField=Nome del giocatore
+gui.invsee.notFound=Nessun giocatore trovato corrispondente al nome: '%s'
+gui.invsee.matchFound.singular=Trovato il seguente giocatore:
+gui.invsee.matchFound.plural=Ho trovato i seguenti giocatori:
+gui.invsee.searchAgain=Cerca ancora
+gui.invsee.ownInventory=Non puoi visualizzare il tuo inventario in questo modo. Seleziona un altro giocatore.
+gui.invsee.back=Torna indietro

@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=该附加组件允许您查看其他玩家的库存并对其进行修改。由 r4isen1920 创建。
+action.hint.exit.r4isen1920_invsee:inventory=点击§l库存按钮§r打开他们的库存
+action.hint.exit.console.r4isen1920_invsee:inventory=按 §l:_input_key.inventory:§r 打开他们的库存
+entity.r4isen1920_invsee:inventory.name=[库存查看器]
+item.r4isen1920_invsee:inventory.name=库存查看器
+gui.invsee.containerTitle=§r的库存
+gui.invsee.title=库存查看器
+gui.invsee.body=选择一名玩家以查看其库存
+gui.invsee.search=按姓名搜索玩家
+gui.invsee.textField=参赛者姓名
+gui.invsee.notFound=未找到与姓名匹配的玩家：“%s”
+gui.invsee.matchFound.singular=找到以下玩家：
+gui.invsee.matchFound.plural=找到以下玩家：
+gui.invsee.searchAgain=再次搜索
+gui.invsee.ownInventory=您无法通过这种方式查看自己的库存。请选择其他玩家。
+gui.invsee.back=回去

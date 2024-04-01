@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Add-On ini memungkinkan Anda melihat inventaris pemain lain dan memodifikasinya. Dibuat oleh r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Ketuk §lTombol Inventaris§r untuk membuka Inventarisnya
+action.hint.exit.console.r4isen1920_invsee:inventory=Tekan §l:_input_key.inventory:§r untuk membuka Inventarisnya
+entity.r4isen1920_invsee:inventory.name=[Penampil Inventaris]
+item.r4isen1920_invsee:inventory.name=Penampil Inventaris
+gui.invsee.containerTitle=Inventarisasi §r
+gui.invsee.title=Penampil Inventaris
+gui.invsee.body=Pilih pemain untuk melihat inventarisnya
+gui.invsee.search=Cari Pemain berdasarkan Nama
+gui.invsee.textField=Nama pemain
+gui.invsee.notFound=Tidak ditemukan pemain yang cocok dengan nama: '%s'
+gui.invsee.matchFound.singular=Menemukan pemain berikut:
+gui.invsee.matchFound.plural=Menemukan pemain berikut:
+gui.invsee.searchAgain=Mencari lagi
+gui.invsee.ownInventory=Anda tidak dapat melihat inventaris Anda sendiri dengan cara ini. Silakan pilih pemain lain.
+gui.invsee.back=Kembali

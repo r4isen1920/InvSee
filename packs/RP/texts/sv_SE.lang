@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Detta tillägg låter dig se andra spelares inventarier och ändra dem. Skapad av r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Tryck på knappen §lInventering§r för att öppna deras inventarie
+action.hint.exit.console.r4isen1920_invsee:inventory=Tryck §l:_input_key.inventory:§r för att öppna deras Inventory
+entity.r4isen1920_invsee:inventory.name=[Inventory Viewer]
+item.r4isen1920_invsee:inventory.name=Inventory Viewer
+gui.invsee.containerTitle=Inventering av §r
+gui.invsee.title=Inventory Viewer
+gui.invsee.body=Välj en spelare för att se deras inventarier
+gui.invsee.search=Sök efter spelare efter namn
+gui.invsee.textField=Spelarnamn
+gui.invsee.notFound=Ingen spelare hittades som matchar namnet: '%s'
+gui.invsee.matchFound.singular=Hittade följande spelare:
+gui.invsee.matchFound.plural=Hittade följande spelare:
+gui.invsee.searchAgain=Sök igen
+gui.invsee.ownInventory=Du kan inte se ditt eget lager på det här sättet. Välj en annan spelare.
+gui.invsee.back=Gå tillbaka

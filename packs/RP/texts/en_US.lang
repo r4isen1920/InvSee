@@ -1,0 +1,22 @@
+
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=This Add-On allows you to see other player's inventory and modify them. Created by r4isen1920.
+
+action.hint.exit.r4isen1920_invsee:inventory=Tap the §lInventory button§r to open their Inventory
+action.hint.exit.console.r4isen1920_invsee:inventory=Press §l:_input_key.inventory:§r to open their Inventory
+
+entity.r4isen1920_invsee:inventory.name=[Inventory Viewer]
+
+item.r4isen1920_invsee:inventory.name=Inventory Viewer
+
+gui.invsee.containerTitle=Inventory of §r
+gui.invsee.title=Inventory Viewer
+gui.invsee.body=Select a player to view their inventory
+gui.invsee.search=Search for Player by Name
+gui.invsee.textField=Player Name
+gui.invsee.notFound=No player found matching the name: '%s'
+gui.invsee.matchFound.singular=Found the following player:
+gui.invsee.matchFound.plural=Found the following players:
+gui.invsee.searchAgain=Search Again
+gui.invsee.ownInventory=You can't view your own inventory this way. Please select another player.
+gui.invsee.back=Go Back

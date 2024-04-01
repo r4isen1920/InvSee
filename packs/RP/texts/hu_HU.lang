@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r InvSee [BP]
+pack.description=Ez a kiegészítő lehetővé teszi más játékosok készletének megtekintését és módosítását. Készítette: r4isen1920.
+action.hint.exit.r4isen1920_invsee:inventory=Érintse meg a §lKészlet gombot§r a leltár megnyitásához
+action.hint.exit.console.r4isen1920_invsee:inventory=Nyomja meg az §l:_input_key.inventory:§r gombot a leltár megnyitásához
+entity.r4isen1920_invsee:inventory.name=[Inventory Viewer]
+item.r4isen1920_invsee:inventory.name=Készletnézegető
+gui.invsee.containerTitle=§r leltár
+gui.invsee.title=Készletnézegető
+gui.invsee.body=Válasszon ki egy játékost a készletének megtekintéséhez
+gui.invsee.search=Játékos keresése név alapján
+gui.invsee.textField=Játékos neve
+gui.invsee.notFound=Nem található a következő névnek megfelelő játékos: '%s'
+gui.invsee.matchFound.singular=A következő játékost találtam:
+gui.invsee.matchFound.plural=A következő játékosokat találtuk:
+gui.invsee.searchAgain=Keresés újra
+gui.invsee.ownInventory=A saját készletét így nem tekintheti meg. Kérjük, válasszon másik játékost.
+gui.invsee.back=menjen vissza

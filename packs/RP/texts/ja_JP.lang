@@ -1,0 +1,17 @@
+pack.name=§7[v1.0]§r Inv[BP]を参照
+pack.description=このアドオンを使用すると、他のプレイヤーのインベントリを確認し、変更することができます。 r4isen1920 によって作成されました。
+action.hint.exit.r4isen1920_invsee:inventory=§lインベントリボタン§r をタップしてインベントリを開きます
+action.hint.exit.console.r4isen1920_invsee:inventory=§l:_input_key.inventory:§r を押してインベントリを開きます
+entity.r4isen1920_invsee:inventory.name=[インベントリビューア]
+item.r4isen1920_invsee:inventory.name=インベントリビューア
+gui.invsee.containerTitle=§rの目録
+gui.invsee.title=インベントリビューア
+gui.invsee.body=プレイヤーを選択してインベントリを表示します
+gui.invsee.search=名前でプレーヤーを検索
+gui.invsee.textField=プレーヤの名前
+gui.invsee.notFound=名前に一致するプレーヤーが見つかりません: '%s'
+gui.invsee.matchFound.singular=次のプレーヤーを見つけました:
+gui.invsee.matchFound.plural=次のプレイヤーを見つけました:
+gui.invsee.searchAgain=もう一度検索
+gui.invsee.ownInventory=この方法では自分の在庫を表示することはできません。別のプレーヤーを選択してください。
+gui.invsee.back=戻る
