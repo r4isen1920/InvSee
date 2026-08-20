@@ -1,0 +1,22 @@
+{
+    "version": "0.3.0",
+    "configurations": [
+        {
+            "type": "regolith",
+            "request": "launch",
+            "name": "Run default Regolith profile",
+            "profile": "default"
+        },
+        {
+            "type": "minecraft-js",
+            "request": "attach",
+            "sourceMapRoot": "${workspaceFolder}/.regolith/tmp/BP/scripts/",
+            "generatedSourceRoot": "${workspaceFolder}/.regolith/tmp/BP/scripts/",
+            "localRoot": "${workspaceFolder}/packs/data/gametests/src/",
+            "name": "(gametests) Debug with Minecraft",
+            "mode": "listen",
+            "port": 19144,
+            "targetModuleUuid": "603f578c-15da-4498-b6c1-f7caf1571c7d"
+        }
+    ]
+}
