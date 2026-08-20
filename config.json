@@ -84,7 +84,7 @@
 					{
 						"filter": "packer",
 						"settings": {
-							"output": "OriginsPE-${git.tag ?? 'test'}-dev.mcaddon"
+							"output": "InvSee-${git.tag ?? 'test'}-dev.mcaddon"
 						}
 					}
 				]
@@ -101,7 +101,7 @@
 					{
 						"filter": "packer",
 						"settings": {
-							"output": "OriginsPE-${git.tag ?? 'test'}.mcaddon"
+							"output": "InvSee-${git.tag ?? 'test'}.mcaddon"
 						}
 					}
 				]
