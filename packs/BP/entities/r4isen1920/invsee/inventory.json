@@ -32,7 +32,7 @@
       "minecraft:inventory": {
         "container_type": "container",
         "inventory_size": 54,
-        "private": true,
+        "private": false,
         "can_be_siphoned_from": false,
         "restrict_to_owner": false
       },
@@ -92,7 +92,7 @@
         }
       },
       "minecraft:is_hidden_when_invisible": {
-      },
+      }/*,
       "minecraft:environment_sensor": {
         "triggers": [
           {
@@ -111,7 +111,7 @@
             "event": "r4isen1920_invsee:instant_despawn"
           }
         ]
-      }
+      }*/
     },
 
     "events": {
