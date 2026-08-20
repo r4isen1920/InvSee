@@ -1,9 +1,9 @@
 import { Logger } from '@bedrock-oss/bedrock-boost';
 import { world } from '@minecraft/server';
 
+import SessionManager from '../session/SessionManager';
 import { Identifiers, LOG_NAMESPACE } from '../Constants';
-import { SessionManager } from '../session/SessionManager';
-import { InvseeMenu } from '../ui/InvseeMenu';
+import { InvseeMenu } from './Menu';
 
 /** All world event subscriptions, kept in one place so the wiring is inspectable. */
 export class InvseeEvents {
@@ -18,16 +18,6 @@ export class InvseeEvents {
 		// The reported slot index is not trusted; a flag is enough to trigger a full diff next tick.
 		world.afterEvents.playerInventoryItemChange.subscribe((event) => {
 			SessionManager.markDirty(event.player.id);
-		});
-
-		world.afterEvents.entityContainerOpened.subscribe((event) => {
-			const session = SessionManager.getByProjector(event.entity.id);
-			if (!session) return;
-
-			session.isOpen = true;
-			LOGGING: {
-				InvseeEvents.log.debug(`Projector opened by viewer: ${session.viewer.name}`);
-			}
 		});
 
 		world.afterEvents.entityContainerClosed.subscribe((event) => {

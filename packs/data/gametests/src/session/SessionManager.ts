@@ -1,13 +1,14 @@
 import { Logger } from '@bedrock-oss/bedrock-boost';
-import { Player, system, world } from '@minecraft/server';
+import { DimensionTypes, Player, system, world } from '@minecraft/server';
 
 import { Identifiers, InvseeTag, LOG_NAMESPACE } from '../Constants';
 import { CursorGuard } from './CursorGuard';
 import { ProjectorSession } from './ProjectorSession';
 import { TargetWatch } from './TargetWatch';
+import { OnWorldLoad } from '@bedrock-oss/stylish';
 
 /** Owns every live projection and the lifecycle rules that tear them down. */
-export class SessionManager {
+export default class SessionManager {
 	private static readonly log = Logger.getLogger(LOG_NAMESPACE, 'SessionManager');
 
 	private static readonly watches = new Map<string, TargetWatch>();
@@ -44,13 +45,11 @@ export class SessionManager {
 		SessionManager.watches.get(playerId)?.markDirty();
 	}
 
-	/**
-	 * The screen closing does not end the projection, but it is the moment a half-finished drag has
-	 * to be resolved, so the settle pass runs here too.
-	 */
+	/** Closing the screen ends the projection, dismounting the viewer from the projector. */
 	static onContainerClosed(session: ProjectorSession): void {
-		session.isOpen = false;
-		system.run(() => SessionManager.settle(session));
+		// One tick of slack lets the client return a cursor stack before the seat is torn down.
+		const projectorId = session.entity.id;
+		system.run(() => SessionManager.closeByProjector(projectorId));
 	}
 
 	static closeForViewer(viewerId: string): void {
@@ -72,13 +71,11 @@ export class SessionManager {
 	}
 
 	/** Removes projectors left behind by a crash, reload, or unclean shutdown. */
+	@OnWorldLoad
 	static sweepOrphans(): void {
 		let removed = 0;
-		for (const dimensionId of [
-			'minecraft:overworld',
-			'minecraft:nether',
-			'minecraft:the_end'
-		]) {
+		const allDims = DimensionTypes.getAll().map(dim => dim.typeId);
+		for (const dimensionId of allDims) {
 			const entities = world.getDimension(dimensionId).getEntities({
 				type: Identifiers.ProjectorEntity,
 				tags: [InvseeTag.Projector]
@@ -92,10 +89,10 @@ export class SessionManager {
 		}
 
 		if (removed > 0) SessionManager.log.info(`Swept orphaned projectors, count: ${removed}`);
+		else SessionManager.log.info(`No orphaned projectors found`);
 	}
 
 	private static close(session: ProjectorSession): void {
-		session.isOpen = false;
 		SessionManager.byViewer.delete(session.viewer.id);
 		SessionManager.byProjector.delete(session.entity.id);
 

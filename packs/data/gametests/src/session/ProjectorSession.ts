@@ -1,5 +1,5 @@
 import { Logger, Vec3 } from '@bedrock-oss/bedrock-boost';
-import { Container, Entity, EntityComponentTypes, ItemStack, Player } from '@minecraft/server';
+import { Container, Entity, EntityComponentTypes, ItemStack, Player, system } from '@minecraft/server';
 
 import { DynamicProp, Identifiers, InvseeTag, LOG_NAMESPACE } from '../Constants';
 import { NameTag } from '../core/NameTag';
@@ -10,9 +10,6 @@ import { CursorGuard } from './CursorGuard';
 export class ProjectorSession {
 	private static readonly log = Logger.getLogger(LOG_NAMESPACE, 'ProjectorSession');
 
-	/** True while the viewer has the projector container screen open. */
-	isOpen = false;
-
 	private nameTagFlags = '';
 
 	private constructor(
@@ -21,6 +18,14 @@ export class ProjectorSession {
 		readonly entity: Entity
 	) {}
 
+	/**
+	 * Creates an instance of ProjectorSession,
+	 * spawning a projector entity and seating the viewer on it.
+	 * 
+	 * @param viewer The player who will be seated on the projector and viewing the target's inventory.
+	 * @param target The player whose inventory will be mirrored to the viewer.
+	 * @returns This instance.
+	 */
 	static create(viewer: Player, target: Player): ProjectorSession | undefined {
 		try {
 			const entity = viewer.dimension.spawnEntity(
@@ -40,6 +45,12 @@ export class ProjectorSession {
 				entity.remove();
 				return undefined;
 			}
+
+			system.runTimeout(() => {
+				viewer.playAnimation('animation.r4isen1920_invsee.player.riding.cancel', {
+					stopExpression: 'q.is_sneaking || !q.is_riding',
+				});
+			}, 2);
 
 			ProjectorSession.log.info(
 				`Opened projector for viewer: ${viewer.name}, target: ${target.name}`
@@ -139,8 +150,6 @@ export class ProjectorSession {
 	}
 
 	dispose(): void {
-		this.isOpen = false;
-
 		try {
 			if (this.entity.isValid) {
 				this.entity.getComponent(EntityComponentTypes.Rideable)?.ejectRiders();

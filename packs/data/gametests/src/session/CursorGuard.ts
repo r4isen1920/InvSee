@@ -28,9 +28,7 @@ export class CursorGuard {
 		try {
 			return CursorGuard.component(player)?.item;
 		} catch (e) {
-			LOGGING: {
-				CursorGuard.log.debug(`Cursor unreadable for player: ${player.name}, error: ${e}`);
-			}
+			CursorGuard.log.debug(`Cursor unreadable for player: ${player.name}, error: ${e}`);
 			return undefined;
 		}
 	}

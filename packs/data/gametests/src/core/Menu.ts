@@ -3,10 +3,10 @@ import { Player, world } from '@minecraft/server';
 import { ActionFormData, ModalFormData } from '@minecraft/server-ui';
 
 import { FormTexture, LOG_NAMESPACE, TranslationKey } from '../Constants';
-import { SessionManager } from '../session/SessionManager';
+import SessionManager from '../session/SessionManager';
 
-const RESET = '\u00a7r';
-const BOLD = '\u00a7l';
+const RESET = '§r';
+const BOLD = '§l';
 
 /** Player picker and search flow for choosing whose inventory to project. */
 export class InvseeMenu {
@@ -16,9 +16,7 @@ export class InvseeMenu {
 
 	static async open(viewer: Player): Promise<void> {
 		if (InvseeMenu.busy.has(viewer.id)) {
-			LOGGING: {
-				InvseeMenu.log.debug(`Menu already open for viewer: ${viewer.name}, ignoring`);
-			}
+			InvseeMenu.log.debug(`Menu already open for viewer: ${viewer.name}, ignoring`);
 			return;
 		}
 

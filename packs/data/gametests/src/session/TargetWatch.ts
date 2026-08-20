@@ -56,9 +56,7 @@ export class TargetWatch {
 	 */
 	isTransactionPending(): boolean {
 		if (CursorGuard.isHolding(this.target)) return true;
-		return this.sessions.some(
-			(session) => session.isOpen && CursorGuard.isHolding(session.viewer)
-		);
+		return this.sessions.some((session) => CursorGuard.isHolding(session.viewer));
 	}
 
 	tick(): void {
@@ -70,7 +68,7 @@ export class TargetWatch {
 		}
 
 		for (const session of this.sessions) {
-			if (!session.isOpen || !session.isValid) continue;
+			if (!session.isValid) continue;
 			this.push(session);
 			session.reclaimUnmappedSlots();
 		}
@@ -89,11 +87,10 @@ export class TargetWatch {
 			equipmentChanged ||= SlotMap.isEquipment(index);
 			for (const session of this.sessions) session.writeSlot(index, item);
 
-			LOGGING: {
-				TargetWatch.log.debug(
-					`Pulled from target: ${this.target.name}, slot: ${index}, item: ${item?.typeId ?? 'empty'}`
-				);
-			}
+			TargetWatch.log.debug(
+				`Pulled from target: ${this.target.name}, slot: ${index}, item: ${item?.typeId ?? 'empty'}`
+			);
+			
 		}
 
 		if (equipmentChanged) this.refreshNameTags();

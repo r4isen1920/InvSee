@@ -145,7 +145,7 @@
 						"settings": {
 							"buildOptions": {
 								"bundle": true,
-								"dropLabels": ["DEBUG", "UI_DEBUG", "LOGGING", "DEV_UI"],
+								"dropLabels": ["DEBUG", "LOGGING"],
 								"minify": true
 							},
 							"modules": ["@minecraft/server@2.9.0", "@minecraft/server-ui@2.1.0"],
@@ -164,8 +164,7 @@
 						"filter": "gametests",
 						"settings": {
 							"buildOptions": {
-								"minify": false,
-								"dropLabels": ["UI_DEBUG"]
+								"minify": false
 							},
 							"debugBuild": true,
 							"modules": ["@minecraft/server@2.9.0", "@minecraft/server-ui@2.1.0"],
