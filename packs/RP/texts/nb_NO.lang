@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Dette tillegget lar deg se andre spilleres inventar og endre dem. Laget av r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Trykk på §lInventar-knappen§r for å åpne deres inventar
 action.hint.exit.console.r4isen1920_invsee:inventory=Trykk §l:_input_key.inventory:§r for å åpne deres inventar

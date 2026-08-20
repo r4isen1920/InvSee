@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Ez a kiegészítő lehetővé teszi más játékosok készletének megtekintését és módosítását. Készítette: r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Érintse meg a §lKészlet gombot§r a leltár megnyitásához
 action.hint.exit.console.r4isen1920_invsee:inventory=Nyomja meg az §l:_input_key.inventory:§r gombot a leltár megnyitásához

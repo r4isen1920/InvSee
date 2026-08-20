@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Это дополнение позволяет вам видеть инвентарь другого игрока и изменять его. Создано r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Нажмите кнопку §lИнвентарь§r, чтобы открыть инвентарь.
 action.hint.exit.console.r4isen1920_invsee:inventory=Нажмите §l:_input_key.inventory:§r, чтобы открыть инвентарь.

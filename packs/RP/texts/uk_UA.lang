@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Цей додаток дозволяє вам бачити інвентар інших гравців і змінювати їх. Створено r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Натисніть кнопку §lІнвентар§r, щоб відкрити їхній інвентар
 action.hint.exit.console.r4isen1920_invsee:inventory=Натисніть §l:_input_key.inventory:§r, щоб відкрити їхній інвентар

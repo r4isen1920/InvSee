@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Questo componente aggiuntivo ti consente di vedere l'inventario di altri giocatori e modificarlo. Creato da r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Tocca il §lpulsante Inventario§r per aprire il loro Inventario
 action.hint.exit.console.r4isen1920_invsee:inventory=Premi §l:_input_key.inventory:§r per aprire il loro inventario

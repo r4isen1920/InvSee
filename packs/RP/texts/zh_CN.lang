@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=该附加组件允许您查看其他玩家的库存并对其进行修改。由 r4isen1920 创建。
 action.hint.exit.r4isen1920_invsee:inventory=点击§l库存按钮§r打开他们的库存
 action.hint.exit.console.r4isen1920_invsee:inventory=按 §l:_input_key.inventory:§r 打开他们的库存

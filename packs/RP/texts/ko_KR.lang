@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=이 추가 기능을 사용하면 다른 플레이어의 인벤토리를 보고 수정할 수 있습니다. r4isen1920에 의해 작성되었습니다.
 action.hint.exit.r4isen1920_invsee:inventory=§l인벤토리 버튼§r을 눌러 인벤토리를 엽니다.
 action.hint.exit.console.r4isen1920_invsee:inventory=인벤토리를 열려면 §l:_input_key.inventory:§r을 누르세요.

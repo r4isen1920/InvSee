@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Denne tilføjelse giver dig mulighed for at se andre spilleres beholdning og ændre dem. Skabt af r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Tryk på §lInventar-knappen§r for at åbne deres Inventory
 action.hint.exit.console.r4isen1920_invsee:inventory=Tryk på §l:_input_key.inventory:§r for at åbne deres Inventory

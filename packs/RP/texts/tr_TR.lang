@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvSee [BP]
+pack.name=§7[v2.0]§r InvSee [BP]
 pack.description=Bu Eklenti diğer oyuncuların envanterini görmenize ve değiştirmenize olanak tanır. r4isen1920 tarafından düzenlendi.
 action.hint.exit.r4isen1920_invsee:inventory=Envanterlerini açmak için §lEnvanter butonuna§r dokunun
 action.hint.exit.console.r4isen1920_invsee:inventory=Envanterlerini açmak için §l:_input_key.inventory:§r tuşuna basın

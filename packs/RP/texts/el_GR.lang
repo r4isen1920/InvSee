@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvΔείτε [BP]
+pack.name=§7[v2.0]§r InvΔείτε [BP]
 pack.description=Αυτό το πρόσθετο σάς επιτρέπει να βλέπετε το απόθεμα άλλων παικτών και να το τροποποιείτε. Δημιουργήθηκε από r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Πατήστε το κουμπί §lΑπόθεμα§r για να ανοίξετε το Απόθεμά τους
 action.hint.exit.console.r4isen1920_invsee:inventory=Πατήστε §l:_input_key.inventory:§r για να ανοίξετε το Inventory τους

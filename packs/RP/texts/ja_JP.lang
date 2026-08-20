@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r Inv[BP]を参照
+pack.name=§7[v2.0]§r Inv[BP]を参照
 pack.description=このアドオンを使用すると、他のプレイヤーのインベントリを確認し、変更することができます。 r4isen1920 によって作成されました。
 action.hint.exit.r4isen1920_invsee:inventory=§lインベントリボタン§r をタップしてインベントリを開きます
 action.hint.exit.console.r4isen1920_invsee:inventory=§l:_input_key.inventory:§r を押してインベントリを開きます

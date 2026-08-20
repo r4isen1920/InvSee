@@ -1,4 +1,4 @@
-pack.name=§7[v1.0]§r InvVer [BP]
+pack.name=§7[v2.0]§r InvVer [BP]
 pack.description=Este complemento permite que você veja o inventário de outros jogadores e modifique-os. Criado por r4isen1920.
 action.hint.exit.r4isen1920_invsee:inventory=Toque no §lbotão Inventário§r para abrir o inventário
 action.hint.exit.console.r4isen1920_invsee:inventory=Pressione §l:_input_key.inventory:§r para abrir seu inventário
