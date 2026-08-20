@@ -1,5 +1,4 @@
 {
-	"$schema": "https://raw.githubusercontent.com/Bedrock-OSS/regolith-schemas/main/config/v1.2.json",
 	"author": "r4isen1920",
 	"name": "InvSee",
 	"packs": {
@@ -11,67 +10,182 @@
 		"filterDefinitions": {
 			"gametests": {
 				"url": "github.com/Bedrock-OSS/regolith-filters",
-				"version": "1.5.3"
+				"version": "1.7.4"
+			},
+			"json_cleaner": {
+				"url": "github.com/Bedrock-OSS/regolith-filters",
+				"version": "2.0.2"
+			},
+			"jsonte": {
+				"url": "github.com/MCDevKit/regolith-library",
+				"version": "2.16.0"
+			},
+			"meta_gen": {
+				"url": "github.com/r4isen1920/regolith-filters",
+				"version": "1.2.0"
+			},
+			"packer": {
+				"url": "github.com/MCDevKit/regolith-library",
+				"version": "1.1.1"
+			},
+			"type_gen": {
+				"url": "github.com/Bedrock-OSS/regolith-filters",
+				"version": "1.4.2"
 			}
 		},
+		"formatVersion": "1.2.0",
 		"profiles": {
+			"base": {
+				"export": {
+					"readOnly": false,
+					"target": "development"
+				},
+				"filters": [
+					{
+						"filter": "meta_gen",
+						"settings": {
+							"syncVersionFromTag": true
+						}
+					},
+					{
+						"filter": "json_cleaner"
+					},
+					{
+						"filter": "jsonte"
+					},
+					{
+						"filter": "type_gen"
+					}
+				]
+			},
+			"build": {
+				"export": {
+					"readOnly": false,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"profile": "build-dev"
+					},
+					{
+						"profile": "build-release"
+					}
+				]
+			},
+			"build-dev": {
+				"export": {
+					"readOnly": false,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"profile": "default"
+					},
+					{
+						"filter": "packer",
+						"settings": {
+							"output": "OriginsPE-${git.tag ?? 'test'}-dev.mcaddon"
+						}
+					}
+				]
+			},
+			"build-release": {
+				"export": {
+					"readOnly": false,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"profile": "release"
+					},
+					{
+						"filter": "packer",
+						"settings": {
+							"output": "OriginsPE-${git.tag ?? 'test'}.mcaddon"
+						}
+					}
+				]
+			},
 			"default": {
 				"export": {
 					"readOnly": false,
 					"target": "development"
 				},
 				"filters": [
-          {
-						"filter": "gametests",
-						"settings": {
-							"modules": [
-								"@minecraft/server@1.9.0",
-								"@minecraft/server-ui@1.1.0",
-                "@minecraft/common@1.2.0"
-							],
-							"buildOptions": {
-								"entryPoints": [
-									"data/gametests/src/index.ts"
-								],
-								"bundle": true,
-								"minify": false,
-								"format": "esm",
-								"target": "es2020"
-							},
-							"outdir": "BP/scripts/r4isen1920/invsee",
-							"outfile": "BP/scripts/r4isen1920/invsee/main.js"
-						}
+					{
+						"profile": "base"
+					},
+					{
+						"profile": "scripts-dev"
 					}
-        ]
+				]
 			},
-			"publish": {
+			"release": {
 				"export": {
 					"readOnly": false,
 					"target": "development"
 				},
 				"filters": [
-          {
+					{
+						"profile": "base"
+					},
+					{
+						"profile": "scripts"
+					}
+				]
+			},
+			"scripts": {
+				"export": {
+					"readOnly": false,
+					"target": "local"
+				},
+				"filters": [
+					{
 						"filter": "gametests",
 						"settings": {
-							"modules": [
-								"@minecraft/server@1.9.0",
-								"@minecraft/server-ui@1.1.0",
-                "@minecraft/common@1.2.0"
-							],
 							"buildOptions": {
-								"entryPoints": [
-									"data/gametests/src/index.ts"
-								],
 								"bundle": true,
-								"minify": true,
-								"format": "esm",
-								"target": "es2020"
+								"dropLabels": [
+									"DEBUG",
+									"UI_DEBUG",
+									"LOGGING",
+									"DEV_UI"
+								],
+								"minify": true
 							},
-							"outdir": "BP/scripts/r4isen1920/invsee",
-							"outfile": "BP/scripts/r4isen1920/invsee/main.js"
+							"modules": [
+								"@minecraft/server@2.9.0",
+								"@minecraft/server-ui@2.1.0"
+							],
+							"outfile": "BP/scripts/main.js"
 						}
 					}
-        ]
+				]
+			},
+			"scripts-dev": {
+				"export": {
+					"readOnly": false,
+					"target": "local"
+				},
+				"filters": [
+					{
+						"filter": "gametests",
+						"settings": {
+							"buildOptions": {
+								"minify": false,
+								"dropLabels": [
+									"UI_DEBUG"
+								]	
+							},
+							"debugBuild": true,
+							"modules": [
+								"@minecraft/server@2.9.0",
+								"@minecraft/server-ui@2.1.0"
+							],
+							"outfile": "BP/scripts/main.js"
+						}
+					}
+				]
 			}
 		}
 	}
