@@ -1,5 +1,5 @@
 {
-	"format_version": "1.18.30",
+	"format_version": "1.26.30",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "r4isen1920_invsee:inventory",
@@ -15,7 +15,7 @@
 
 		"components": {
 			"minecraft:type_family": {
-				"family": ["inventory", "invsee", "inanimate"]
+				"family": ["r4isen1920", "invsee", "inventory", "inanimate"]
 			},
 
 			"minecraft:rideable": {
@@ -46,65 +46,17 @@
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"cause": "all",
-					"deals_damage": false
+					"deals_damage": "no"
 				}
 			},
-			"minecraft:movement": {
-				"value": 0.1
-			},
-			"minecraft:movement.basic": {},
-			"minecraft:jump.static": {},
-			"minecraft:input_ground_controlled": {},
-			"minecraft:behavior.controlled_by_player": {
-				"priority": 0
-			},
+
 			"minecraft:physics": {
 				"has_collision": false,
 				"has_gravity": false
 			},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": false
-			},
-			"minecraft:nameable": {
-				"always_show": false,
-				"allow_name_tag_renaming": false
-			},
-			"minecraft:interact": {
-				"interactions": {
-					"on_interact": {
-						"filters": {
-							"all_of": [
-								{
-									"test": "is_family",
-									"subject": "other",
-									"value": "player"
-								}
-							]
-						}
-					}
-				}
-			},
-			"minecraft:is_hidden_when_invisible": {} /*,
-      "minecraft:environment_sensor": {
-        "triggers": [
-          {
-            "filters": {
-              "all_of": [
-                { 
-                  "test": "rider_count",
-                  "value": 0
-                },
-                {
-                  "test": "has_tag",
-                  "value": "invsee"
-                }
-              ]
-            },
-            "event": "r4isen1920_invsee:instant_despawn"
-          }
-        ]
-      }*/
+
+			"minecraft:transient": {},
+			"minecraft:is_hidden_when_invisible": {}
 		},
 
 		"events": {
