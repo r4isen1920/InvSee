@@ -1,2 +1,22 @@
 /build
+/publish
 /.regolith
+
+node_modules/
+scripts/
+
+packs/data/gametests/src/Meta.ts
+packs/data/gametests/src/Files.ts
+
+# Do not override vanilla particles
+packs/RP/textures/particle/particles.png
+
+*.txt
+*.py
+*.ase
+*.aseprj
+*.mcworld
+*.mcpack
+*.DS_Store
+
+!packs/data/gametests/uuid.txt
