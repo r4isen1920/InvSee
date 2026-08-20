@@ -24,8 +24,20 @@
           "type": "image",
           "size": [ 16, 16 ],
           "texture": "('textures/ui/empty_armor_slot_' + $texture)",
-          "ignored": "$ignored_cell_ref",
-          "layer": 3
+          "layer": 3,
+
+					"bindings": [
+						{
+							"binding_type": "collection",
+							"binding_name": "#item_id_aux",
+							"binding_collection_name": "container_items"
+						},
+						{
+							"binding_type": "view",
+							"source_property_name": "(not ((#item_id_aux * 1) > 0))",
+							"target_property_name": "#visible"
+						}
+					]
         }
       }
     ]
