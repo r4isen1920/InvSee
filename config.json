@@ -145,18 +145,10 @@
 						"settings": {
 							"buildOptions": {
 								"bundle": true,
-								"dropLabels": [
-									"DEBUG",
-									"UI_DEBUG",
-									"LOGGING",
-									"DEV_UI"
-								],
+								"dropLabels": ["DEBUG", "UI_DEBUG", "LOGGING", "DEV_UI"],
 								"minify": true
 							},
-							"modules": [
-								"@minecraft/server@2.9.0",
-								"@minecraft/server-ui@2.1.0"
-							],
+							"modules": ["@minecraft/server@2.9.0", "@minecraft/server-ui@2.1.0"],
 							"outfile": "BP/scripts/main.js"
 						}
 					}
@@ -173,15 +165,10 @@
 						"settings": {
 							"buildOptions": {
 								"minify": false,
-								"dropLabels": [
-									"UI_DEBUG"
-								]	
+								"dropLabels": ["UI_DEBUG"]
 							},
 							"debugBuild": true,
-							"modules": [
-								"@minecraft/server@2.9.0",
-								"@minecraft/server-ui@2.1.0"
-							],
+							"modules": ["@minecraft/server@2.9.0", "@minecraft/server-ui@2.1.0"],
 							"outfile": "BP/scripts/main.js"
 						}
 					}

@@ -1,10 +1,9 @@
 ---
 name: Bug report
 about: Create a report to fix bugs
-title: "[ORIGIN OR CLASS][ORIGIN/ CLASS NAME]"
+title: '[CATEGORY][ITEM]'
 labels: 'type: bug'
 assignees: ''
-
 ---
 
 **Minecraft version**
@@ -20,6 +19,7 @@ A clear and concise description of what the bug is.
 
 **Repro steps**
 Steps to reproduce the behavior:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'

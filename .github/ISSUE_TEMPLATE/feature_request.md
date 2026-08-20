@@ -1,10 +1,9 @@
 ---
 name: Feature request
 about: Suggest an idea for the Add-On
-title: "[ORIGIN OR CLASS][ORIGIN/ CLASS NAME]"
+title: '[CATEGORY][ITEM]'
 labels: 'type: enhancement'
 assignees: r4isen1920
-
 ---
 
 **Is your feature request related to a problem? Please describe.**

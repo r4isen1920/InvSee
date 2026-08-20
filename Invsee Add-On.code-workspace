@@ -3,8 +3,8 @@
 		{
 			"path": "."
 		}
-  ],
-  "settings": {
-    "workbench.iconTheme": "vscode-great-icons"
-  }
+	],
+	"settings": {
+		"workbench.iconTheme": "vscode-great-icons"
+	}
 }
