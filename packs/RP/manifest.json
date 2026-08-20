@@ -5,7 +5,8 @@
 		"description": "pack.description",
 		"uuid": "2e243696-24b9-40aa-979a-f9b16eca69f2",
 		"version": [2, 0, 0],
-		"min_engine_version": [1, 26, 30]
+		"min_engine_version": [1, 26, 30],
+		"pack_scope": "world"
 	},
 	"modules": [
 		{
@@ -23,6 +24,7 @@
 	],
 	"metadata": {
 		"authors": ["r4isen1920"],
+		"product_type": "addon",
 		"url": "https://mcpedl.com/user/r4isen1920"
 	}
 }
